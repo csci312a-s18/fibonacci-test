@@ -11,4 +11,12 @@ describe('Computes Fibonacci numbers', () => {
     expect(fib(3)).toBe(2);
     expect(fib(6)).toBe(8);
   });
+
+  test('Returns zero for negative inputs', () => {
+    expect(fib(-1)).toBe(0);
+  });
+
+  test('Rounds up for non-integer argument', () => {
+    expect(fib(5.8)).toBe(8);
+  });
 });
