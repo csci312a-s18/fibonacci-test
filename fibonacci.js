@@ -1,8 +1,9 @@
-const fib = function fibonacci(num) {
+const fib = function fibonacci(fibNum) {
+  const num = Math.ceil(fibNum);
   let a = 0;
   let b = 1;
 
-  if (num === 0) {
+  if (num <= 0) {
     return a;
   } else if (num === 1) {
     return b;
